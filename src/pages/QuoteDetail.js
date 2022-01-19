@@ -20,7 +20,6 @@ const QuoteDetail = () => {
 
   return (
     <>
-      <h1>{param.quoteId}</h1>
       <HighlightedQuote text={quotes.text} author={quotes.author} />
       <Routes>
         <Route
