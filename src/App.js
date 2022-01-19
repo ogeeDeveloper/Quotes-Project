@@ -1,8 +1,9 @@
-import { Route, Routes, Navigate } from 'react-router-dom'
-import AllQuotes from './pages/AllQuotes'
-import QuoteDetail from './pages/QuoteDetail'
-import NewQuote from './pages/NewQuote'
-import Comments from './components/comments/Comments'
+import { Route, Routes, Navigate } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import AllQuotes from "./pages/AllQuotes";
+import QuoteDetail from "./pages/QuoteDetail";
+import NewQuote from "./pages/NewQuote";
+import Comments from "./components/comments/Comments";
 
 function App() {
   // Handling Redirects in react-router-dom v6
@@ -11,19 +12,19 @@ function App() {
   //     return res.redirect("/quotes")
   //   }
   // }
-  
+
   return (
-    <div>
+    <Layout>
       <Routes>
         <Route path="/" element={<Navigate replace to="/quotes" />} />
-        <Route path="/quotes" element={<AllQuotes/>} exact/>
-        <Route path="/quotes/*" element={<QuoteDetail/>}>
-          <Route path=":id" element={<Comments/>} />
+        <Route path="/quotes" element={<AllQuotes />} exact />
+        <Route path="/quotes/*" element={<QuoteDetail />}>
+          <Route path=":id" element={<Comments />} />
         </Route>
-        <Route path="/add-quote" element={<NewQuote/>}/>
+        <Route path="/add-quote" element={<NewQuote />} />
       </Routes>
       <h1>Hello</h1>
-    </div>
+    </Layout>
   );
 }
 
