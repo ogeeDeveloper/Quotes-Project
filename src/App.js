@@ -3,7 +3,6 @@ import Layout from "./components/layout/Layout";
 import AllQuotes from "./pages/AllQuotes";
 import QuoteDetail from "./pages/QuoteDetail";
 import NewQuote from "./pages/NewQuote";
-import Comments from "./components/comments/Comments";
 
 function App() {
   // Handling Redirects in react-router-dom v6
@@ -18,9 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate replace to="/quotes" />} />
         <Route path="/quotes" element={<AllQuotes />} exact />
-        <Route path="/quotes/*" element={<QuoteDetail />}>
-          <Route path=":id" element={<Comments />} />
-        </Route>
+        <Route path="/quotes/:quoteId" element={<QuoteDetail />} />
         <Route path="/add-quote" element={<NewQuote />} />
       </Routes>
     </Layout>
