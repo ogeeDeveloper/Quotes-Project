@@ -1,8 +1,13 @@
+import {Outlet} from 'react-router-dom'
+
 const QuoteDetail = () => {
+    // const param = useParams()
+    // console.log(param.quotesID)
     return (
-        <div>
-            Quote Detail
-        </div>
+        <>
+            <h1>Quote Detail</h1>
+            <Outlet />
+        </>
     )
 }
 
