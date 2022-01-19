@@ -23,7 +23,6 @@ function App() {
         </Route>
         <Route path="/add-quote" element={<NewQuote />} />
       </Routes>
-      <h1>Hello</h1>
     </Layout>
   );
 }
