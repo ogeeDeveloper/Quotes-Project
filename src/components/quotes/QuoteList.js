@@ -30,7 +30,10 @@ const QuoteList = (props) => {
 
   const changeSortHandler = () => {
     // Change how we sort our quotes
-    navigate(`/quotes?sort=${isSortingAscending ? "desc" : "asc"}`);
+    navigate({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAscending ? "desc" : "asc"}`,
+    });
     // navigate("/quotes?sort=" + (isSortingAscending ? "desc" : "asc"));
   };
 

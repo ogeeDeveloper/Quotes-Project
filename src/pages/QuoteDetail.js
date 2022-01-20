@@ -1,5 +1,5 @@
 import { Divider } from "antd";
-import { Routes, Route, Link, Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import HighlightedQuote from "../components/quotes/HighlightedQuote";
 
