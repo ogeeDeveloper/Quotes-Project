@@ -44,6 +44,7 @@ const QuoteList = (props) => {
           Sort {isSortingAscending ? "Descending" : "Ascending"}
         </button>
       </div>
+
       <ul className={classes.list}>
         {sortedQuotes.map((quote) => (
           <QuoteItem

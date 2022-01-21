@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import RouterPrompt from "../UI/RouterPrompt";
+// import RouterPrompt from "../UI/RouterPrompt";
 
 import Card from "../UI/Card";
 import LoadingSpinner from "../UI/LoadingSpinner";
@@ -31,14 +31,14 @@ const QuoteForm = (props) => {
 
   return (
     <>
-      <RouterPrompt
+      {/* <RouterPrompt
         when={onFocusHandler}
         title="Leave this page"
         cancelText="Cancel"
         okText="Confirm"
         onOK={() => true}
         onCancel={() => false}
-      />
+      /> */}
       <Card>
         <form
           className={classes.form}
