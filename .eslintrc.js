@@ -15,6 +15,6 @@ module.exports = {
   rules: {
     "no-unused-vars": "warn",
     "react/react-in-jsx-scope": 0,
-    "react/prop-types": "ignore",
+    "react/prop-types": "1",
   },
 };
