@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const MainNavigation = () => {
   return (
     <header className={styles.header}>
-      <h1 className={styles.logo}>Navigation</h1>
+      <h1 className={styles.logo}>Quotes App</h1>
       <nav className={styles.nav}>
         <ul>
           <li>
